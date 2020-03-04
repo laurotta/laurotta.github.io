@@ -1,0 +1,17 @@
+h1 {
+    color: #feca07;
+ }
+ 
+ body {
+     font-family: 'Open Sans', sans-serif;
+ }
+ 
+ /*##################################*/
+ /*############# GRILLE #############*/
+ /*#################################*/
+ 
+ @media (min-width: 1200px) {
+  .container {
+    width: 1230px;
+  }
+ }
