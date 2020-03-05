@@ -1,18 +1,17 @@
-/*=====================================*/
-/* Organisation pour appareils mobiles */
-/*=====================================*/
+body {
+    margin: 0;
+}
 
+/*=====================================*/
+/* Organisation pour appareils Mobiles */
+/*=====================================*/
 @media all and (max-width: 960px) {
-
-
-
-    /*-------------*/
+    /*------M------*/
     /* Généralités */
     /*-------------*/
-    body {
+    main {
         font-family: 'Trebuchet MS', sans-serif;
         font-size: 0.8em;
-        margin: 0;
     }
 
     a {
@@ -25,10 +24,13 @@
         color: blue;
     }
 
+    aside {
+        background-color: #feca07;
+    }
 
-    /*-----------------*/
-    /* Boîte 1 "photo" */
-    /*-----------------*/
+    /*----M----*/
+    /* Entête */
+    /*---------*/
     #Bloc-photo {
         display: flex;
         justify-content: center;
@@ -37,10 +39,6 @@
         height: 326px;
     }
 
-
-    /*------------------------*/
-    /* Boîte 2 "nom et titre" */
-    /*------------------------*/
     #Bloc-nom-titre {
         display: flex;
         flex-direction: column;
@@ -77,21 +75,17 @@
         margin-top: 0.1rem;
     } 
 
-    /*-------------------*/
-    /* Boîte 3 "contact" */
-    /*-------------------*/
+    /*--------M--------*/
+    /* Contact + About */
+    /*-----------------*/
     #Bloc-contact {
-        background-color: #feca07;
         height: 344px;
     }
 
-    .bandeau-titre {
+    .bandeau-titre {    
         background-color: #404040;
-        height: 48px;                   /* voir si passage en "em" */
+        height: 38px;
         text-align: center;
-    }
-
-    .h2jaune {    
         font-weight: 500;
         color: #feca07;
         font-size: 20px;
@@ -103,12 +97,8 @@
         padding-top: 1rem;
     }
 
-
-    /*-------------------*/
-    /* Boîte 4 "about" */
-    /*-------------------*/
     #Bloc-about {
-        background-color: #feca07;
+        padding-bottom: 2rem;
     }
 
     .presentation {
@@ -117,10 +107,30 @@
         padding: 1rem 2rem 1rem 2rem;
     }
 
+    /*--------M---------*/
+    /* Partie "loisirs" */
+    /*------------------*/
+    #Bloc-loisirs-pc {
+        display: none;
+    }
 
-    /*---------------------*/
-    /* Boîte 5 "formation" */
-    /*---------------------*/
+    #Bloc-loisirs-mobile {
+        background-color: #feca07;
+        height: 136px;
+    }
+
+    .icones-loisirs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        height: 88px;
+        font-size: 3em;
+    }
+
+    /*--------------------M---------------------*/
+    /* Formation + Expérience + Recommandations */
+    /*------------------------------------------*/
 
     .icone-titre {
         padding-top: 1rem;
@@ -201,16 +211,6 @@
         margin-bottom: 0.2rem;
     }
 
-
-    /*----------------------*/
-    /* Boîte 6 "expérience" */
-    /*----------------------*/
-
-
-    /*---------------------------*/
-    /* Boîte 7 "recommandations" */
-    /*---------------------------*/
-
     .grp-references {
         display: flex;
         flex-direction: row;
@@ -222,25 +222,6 @@
         margin-bottom: 0.2rem;
         padding-left: 2rem;
     }
-
-
-    /*-------------------*/
-    /* Boîte 8 "loisirs" */
-    /*-------------------*/
-    #Bloc-loisirs {
-        background-color: #feca07;
-        height: 136px;
-    }
-
-    .icones-loisirs {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        height: 88px;
-        font-size: 3em;
-    }
-
 }
 
 /*==============================*/
@@ -255,20 +236,15 @@
     }
 }
 
-
 /*===============================*/
-/* Organisation pour ordinateurs */
+/* Organisation pour Ordinateurs */
 /*===============================*/
-
 @media all and (min-width: 961px) {
 
-    /*-------------*/
+    /*------O------*/
     /* Généralités */
     /*-------------*/
-    body {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    main {
         margin: auto;
         font-family: 'Trebuchet MS', sans-serif;
         font-size: 0.8em;
@@ -285,12 +261,27 @@
         color: blue;
     }
 
+    aside {
+        float: left;
+        width: 30%;
+        vertical-align: top;
+        background-color: #feca07;
+    }
 
-    /*-----------------*/
-    /* Boîte 1 "photo" */
-    /*-----------------*/
+    article {
+        margin-left: 30%;
+        width: 70%;
+        vertical-align: top;
+    }
+
+    /*----O---*/
+    /* Entête */
+    /*--------*/
+    header {
+        display: flex;
+        flex-direction: row;
+    }
     #Bloc-photo {
-        order: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -299,12 +290,7 @@
         height: 326px;
     }
 
-
-    /*------------------------*/
-    /* Boîte 2 "nom et titre" */
-    /*------------------------*/
     #Bloc-nom-titre {
-        order: 2;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -341,24 +327,17 @@
         margin-top: 0.1rem;
     } 
 
-
-    /*-------------------*/
-    /* Boîte 3 "contact" */
-    /*-------------------*/
+    /*--------O--------*/
+    /* Contact + About */
+    /*-----------------*/
     #Bloc-contact {
-        order: 3;
-        background-color: #feca07;
-        width: 30%;
         height: 344px;
     }
 
-    .bandeau-titre {
+    .bandeau-titre {    
         background-color: #404040;
-        height: 48px;                   /* voir si passage en "em" */
+        height: 38px;
         text-align: center;
-    }
-
-    .h2jaune {    
         font-weight: 500;
         color: #feca07;
         font-size: 20px;
@@ -370,14 +349,8 @@
         padding-top: 1rem;
     }
 
-
-    /*-------------------*/
-    /* Boîte 4 "about" */
-    /*-------------------*/
     #Bloc-about {
-        order: 5;
-        background-color: #feca07;
-        width: 30%;
+        height: 610px;
     }
 
     .presentation {
@@ -386,14 +359,9 @@
         padding: 1rem 2rem 1rem 2rem;
     }
 
-
-    /*---------------------*/
-    /* Boîte 5 "formation" */
-    /*---------------------*/
-    #Bloc-formation {
-        order: 4;
-        width: 70%;
-    }
+    /*-------------------O---------------------*/
+    /* Formation + Epérience + Recommandations */
+    /*-----------------------------------------*/
 
     .icone-titre {
         padding-top: 1rem;
@@ -473,24 +441,6 @@
         margin-bottom: 0.2rem;
     }
 
-
-    /*----------------------*/
-    /* Boîte 6 "expérience" */
-    /*----------------------*/
-    #Bloc-xppro {
-        order: 6;
-        width: 70%;
-    }
-
-
-    /*---------------------------*/
-    /* Boîte 7 "recommandations" */
-    /*---------------------------*/
-    #Bloc-recom {
-        order: 8;
-        width: 70%;
-    }
-
     .grp-references {
         display: flex;
         flex-direction: row;
@@ -504,21 +454,22 @@
     }
 
 
-    /*-------------------*/
-    /* Boîte 8 "loisirs" */
-    /*-------------------*/
-    #Bloc-loisirs {
-        order: 7;
-        background-color: #feca07;
-        width: 30%;
-        height: 136px;
+    /*--------O---------*/
+    /* Partie "loisirs" */
+    /*------------------*/
+    #Bloc-loisirs-mobile {
+        display: none;
+    }
+
+    #Bloc-loisirs-pc {
+        height: 140px;
     }
 
     .icones-loisirs {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        align-content: center;
         height: 88px;
         font-size: 3em;
     }
