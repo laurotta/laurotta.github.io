@@ -1,17 +1,6 @@
-/*------------------------------*/
-/* À supprimer une fois terminé */
-/*------------------------------*/
-.work {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    font-size: 2em;
-    color:red;
-}
-
-
-/*-------------------------------------*/
+/*=====================================*/
 /* Organisation pour appareils mobiles */
-/*-------------------------------------*/
+/*=====================================*/
 
 @media all and (max-width: 960px) {
 
@@ -23,6 +12,7 @@
     body {
         font-family: 'Trebuchet MS', sans-serif;
         font-size: 0.8em;
+        margin: 0;
     }
 
     a {
@@ -253,7 +243,9 @@
 
 }
 
-
+/*==============================*/
+/* Optimisation pour téléphones */
+/*==============================*/
 @media (max-width: 768px) {
     .cercle {
         display: none;
@@ -264,15 +256,20 @@
 }
 
 
-/*-------------------------------*/
+/*===============================*/
 /* Organisation pour ordinateurs */
-/*-------------------------------*/
+/*===============================*/
 
 @media all and (min-width: 961px) {
+
     /*-------------*/
     /* Généralités */
     /*-------------*/
     body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
         font-family: 'Trebuchet MS', sans-serif;
         font-size: 0.8em;
         max-width: 1190px;
@@ -293,6 +290,7 @@
     /* Boîte 1 "photo" */
     /*-----------------*/
     #Bloc-photo {
+        order: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -306,6 +304,7 @@
     /* Boîte 2 "nom et titre" */
     /*------------------------*/
     #Bloc-nom-titre {
+        order: 2;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -347,6 +346,7 @@
     /* Boîte 3 "contact" */
     /*-------------------*/
     #Bloc-contact {
+        order: 3;
         background-color: #feca07;
         width: 30%;
         height: 344px;
@@ -375,6 +375,7 @@
     /* Boîte 4 "about" */
     /*-------------------*/
     #Bloc-about {
+        order: 5;
         background-color: #feca07;
         width: 30%;
     }
@@ -390,6 +391,7 @@
     /* Boîte 5 "formation" */
     /*---------------------*/
     #Bloc-formation {
+        order: 4;
         width: 70%;
     }
 
@@ -476,6 +478,7 @@
     /* Boîte 6 "expérience" */
     /*----------------------*/
     #Bloc-xppro {
+        order: 6;
         width: 70%;
     }
 
@@ -484,6 +487,7 @@
     /* Boîte 7 "recommandations" */
     /*---------------------------*/
     #Bloc-recom {
+        order: 8;
         width: 70%;
     }
 
@@ -504,6 +508,7 @@
     /* Boîte 8 "loisirs" */
     /*-------------------*/
     #Bloc-loisirs {
+        order: 7;
         background-color: #feca07;
         width: 30%;
         height: 136px;
