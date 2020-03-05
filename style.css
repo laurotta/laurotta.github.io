@@ -80,12 +80,12 @@
         padding-left: 2rem;
     }
 
-    .souligne {
-        text-decoration: underline #feca07;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 0.4rem;
-    }
-
+    .mini-lignejaune {
+        border-bottom: solid 2px #feca07;
+        width: 3rem;
+        margin-left: 2rem;
+        margin-top: 0.1rem;
+    } 
 
     /*-------------------*/
     /* Boîte 3 "contact" */
@@ -151,6 +151,7 @@
         color: inherit;
         font-size: 20px;
         padding-left: 1rem;
+        padding-right: 2rem;
     }
 
     .lignejaune {
@@ -334,11 +335,12 @@
         padding-left: 2rem;
     }
 
-    .souligne {
-        text-decoration: underline #feca07;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 0.4rem;
-    }
+    .mini-lignejaune {
+        border-bottom: solid 2px #feca07;
+        width: 3rem;
+        margin-left: 2rem;
+        margin-top: 0.1rem;
+    } 
 
 
     /*-------------------*/
