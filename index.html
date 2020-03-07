@@ -15,30 +15,30 @@
 
 <main>
 
-    <!------------>
     <!-- Entête -->
     <header>
-        <!------------------------------->
-        <!-- Partie contenant la photo -->
-        <section id="Bloc-photo">
-            <p class="photo"><a href="images/laurent.png"><img src="images/laurent_rond_220.png" alt="Photo de Laurent Ottaviani" title="ma photo"/></a></p>
-        </section>
 
-        <!----------------------------------->
+        <!-- Partie contenant la photo -->
+        <div id="Photo">
+            <p><a href="images/laurent.png"><img src="images/laurent_rond_220.png" alt="Photo de Laurent Ottaviani" title="ma photo"/></a></p>
+        </div>
+        
         <!-- Partie contenant nom et titre -->
-        <section id="Bloc-nom-titre">
+        <section id="Nom-titre">
             <h1><span class="prenom">LAURENT</span> OTTAVIANI</h1>
-            <h3>Développeur Web freelance</h3>
-            <div class="mini-lignejaune"></div>
+            <div class="devligne">
+                <h3>Développeur Web freelance</h3>
+                <div class="mini-ligne"></div>
+            </div>
         </section>
     </header>
 
-    <!------------------------------------------------------->
-    <!-- Partie jaune contenant les informations générales -->
+
+    <!-- Partie gauche contenant les informations générales -->
     <aside>
-        <!----------------------------->
+
         <!-- Informations de contact -->
-        <section id="Bloc-contact">
+        <section id="Contact">
             <h2 class="bandeau-titre">CONTACT</h2>
             <div class="donnees">
                 <p>Adresse<br>11, Guionnet<br>33620 Tizac de Lapouyade, France</p>
@@ -49,9 +49,8 @@
             </div>
         </section>
 
-        <!------------------------------>
         <!-- Éléments de présentation -->
-        <section id="Bloc-about">
+        <section id="About">
             <h2 class="bandeau-titre">À PROPOS DE MOI</h2>
             <div class="presentation">
                 <p>Après un parcours professionnel de 14 ans sur l'intégration de systèmes électroniques pour les secteurs de la santé et de l'industrie
@@ -62,31 +61,30 @@
             </div>
         </section>
 
-        <!----------------------->
         <!-- Icônes de loisirs --> <!-- °°° caché en mode mobile °°° -->
-        <section id="Bloc-loisirs-pc">
+        <section id="Loisirs-pc">
             <h2 class="bandeau-titre">LOISIRS</h2>
             <div class="icones-loisirs">
                 <i class="fas fa-music"></i>
                 <i class="fas fa-biking"></i>
-                <i class="fas fa-swimmer"></i>
+                <i class="fas fa-gamepad"></i>
             </div>
         </section>
     </aside>
 
-    <!------------------------------------------------------>
-    <!-- Partie blanche contenant les détails du parcours -->
+
+    <!-- Partie droite contenant les détails du parcours -->
     <article>
-        <!-------------------------------------->
+
         <!-- Éléments concernant la formation -->
-        <section id="Bloc-formation">
+        <section id="Formation">
 
             <!-- bandeau de titre -->
             <header class="icone-titre">
                 <div class="icone"><i class="fas fa-user-graduate"></i></div>
                 <h2 class="h2noir">FORMATION</h2>
             </header>
-            <div class="lignejaune"></div>
+            <div class="ligne"></div>
 
             <!-- contenu 1ère formation -->
             <div class="details">
@@ -115,16 +113,15 @@
             </div>
         </section>
 
-        <!--------------------------------------------->
         <!-- Éléments concernant les expériences pro -->
-        <section id="Bloc-xppro">
+        <section id="Xppro">
 
             <!-- bandeau de titre -->
             <header class="icone-titre">
                 <div class="icone"><i class="fas fa-briefcase"></i></div>
                 <h2 class="h2noir">EXPÉRIENCE PROFESSIONNELLE</h2>
             </header>
-            <div class="lignejaune"></div>
+            <div class="ligne"></div>
 
             <!-- contenu 1ère expérience -->
             <div class="details">
@@ -166,16 +163,15 @@
             </div>
         </section>
 
-        <!--------------------------------------------->
         <!-- Éléments concernant les recommandations -->
-        <section id="Bloc-recom">
+        <section id="Recom">
 
             <!-- bandeau de titre -->
             <header class="icone-titre">
                 <div class="icone"><i class="fas fa-pencil-alt"></i></div>
                 <h2 class="h2noir">RECOMMANDATIONS</h2>
             </header>
-            <div class="lignejaune"></div>
+            <div class="ligne"></div>
 
             <!-- contenu -->
             <div class="grp-references">
@@ -189,15 +185,14 @@
                 </div>
             </div>
         </section>
-
-        <!----------------------->
+        
         <!-- Icônes de loisirs --> <!-- °°° caché en mode pc °°° -->
-        <section id="Bloc-loisirs-mobile">
+        <section id="Loisirs-mobile">
             <h2 class="bandeau-titre">LOISIRS</h2>
             <div class="icones-loisirs">
                 <i class="fas fa-music"></i>
                 <i class="fas fa-biking"></i>
-                <i class="fas fa-swimmer"></i>
+                <i class="fas fa-gamepad"></i>
             </div>
         </section>
     </article>

@@ -1,238 +1,300 @@
 body {
     margin: 0;
+    background-color: #29221f;
 }
 
+main {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 0.8em;
+}
+
+aside {
+    background-color: #0abfbc;
+}
+
+article {
+    background-color: #fcf7c5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fc354c;
+}
+
+/* Entête */
+
+header {
+    display: flex;
+}
+
+#Photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0abfbc;
+    height: 326px;
+}
+
+#Nom-titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fcf7c5;
+    height: 326px;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.prenom {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #fc354c;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.mini-ligne {
+    border-bottom: solid 2px #fc354c;
+    width: 3rem;
+    margin-top: 0.1rem;
+} 
+
+/* Loisirs */
+
+.icones-loisirs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2.5em;
+    padding-top: 2rem;
+}
+
+/* Aside */
+
+#Contact {
+    height: 344px;
+}
+
+.bandeau-titre {    
+    margin: 0;
+    background-color: #13747d;
+    text-align: center;
+    font-weight: 600;
+    color: #0abfbc;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.donnees {
+    margin: auto;
+    padding-top: 2em;
+    padding-left: 3em;
+}
+
+.presentation {
+    text-align: justify;
+    word-wrap: break-word;
+    padding: 2em 3em 2em 3em;
+}
+
+/* Section "formation, etc." */
+
+.icone-titre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icone {
+    margin: 0;
+    padding-left: 2.4rem;
+    font-size: 20px;
+    color: #13747d;
+}
+
+.h2noir {
+    font-weight: 500;
+    color: inherit;
+    font-size: 20px;
+    padding-left: 1rem;
+}
+
+.ligne {
+    border-bottom: solid 2px #13747d;
+    margin-right: 2.4rem;
+    margin-left: 2.4rem;
+} 
+
+.details {
+    display: flex;
+    flex-direction: row;
+}
+
+.points-dates {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    padding-left: 2.4rem;
+    margin-top: 2rem;
+}
+
+.dates {
+    margin: 0;
+    width: 85%;
+}
+
+.point-cercle {
+    font-size: 1.2em;
+    color: #13747d;
+    width: 15%;
+    padding-top: 0.3rem;
+}
+
+.cercle {
+    font-size: 0.7em;
+    color: #13747d;
+    width: 13%;
+    padding-left: 0.3rem;
+    padding-top: 0.4rem;
+}
+
+.information {
+    width: 70%;
+    text-align: justify;
+    padding-right: 2.4rem;
+}
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+
+.grp-references {
+    display: flex;
+    flex-direction: row;
+}
+
+.references {
+    width: 50%;
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    padding-left: 2rem;
+}
+    
 /*=====================================*/
 /* Organisation pour appareils Mobiles */
 /*=====================================*/
 @media all and (max-width: 960px) {
-    /*------M------*/
-    /* Généralités */
-    /*-------------*/
-    main {
-        font-family: 'Trebuchet MS', sans-serif;
-        font-size: 0.8em;
-    }
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    a:hover {
-        text-decoration: underline;
-        color: blue;
-    }
-
-    aside {
-        background-color: #feca07;
-    }
-
-    /*----M----*/
     /* Entête */
-    /*---------*/
-    #Bloc-photo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #feca07;
-        height: 326px;
-    }
 
-    #Bloc-nom-titre {
-        display: flex;
+    header {
         flex-direction: column;
-        justify-content: center;
-        height: 326px;
     }
 
-    h1 {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 300;
-        font-size: 3.5em;
-        margin: 0;
-        padding-left: 2rem;
+    #Nom-titre {
+        align-items: center;
     }
 
-    .prenom {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 500;
-        color: #feca07;
+    /* About */
+
+    #About {
+        height: auto;
     }
 
-    h3 {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 500;
-        font-size: 1.4em;
-        margin: 0;
-        padding-left: 2rem;
-    }
+    /* Loisirs */
 
-    .mini-lignejaune {
-        border-bottom: solid 2px #feca07;
-        width: 3rem;
-        margin-left: 2rem;
-        margin-top: 0.1rem;
-    } 
-
-    /*--------M--------*/
-    /* Contact + About */
-    /*-----------------*/
-    #Bloc-contact {
-        height: 344px;
-    }
-
-    .bandeau-titre {    
-        background-color: #404040;
-        height: 38px;
-        text-align: center;
-        font-weight: 500;
-        color: #feca07;
-        font-size: 20px;
-        padding-top: 14px;
-    }
-
-    .donnees {
-        padding-left: 2rem;
-        padding-top: 1rem;
-    }
-
-    #Bloc-about {
-        padding-bottom: 2rem;
-    }
-
-    .presentation {
-        text-align: justify;
-        word-wrap: break-word;
-        padding: 1rem 2rem 1rem 2rem;
-    }
-
-    /*--------M---------*/
-    /* Partie "loisirs" */
-    /*------------------*/
-    #Bloc-loisirs-pc {
+    #Loisirs-pc {
         display: none;
     }
 
-    #Bloc-loisirs-mobile {
-        background-color: #feca07;
-        height: 136px;
+    #Loisirs-mobile {
+        background-color: #0abfbc;
+        height: 144px;
     }
 
-    .icones-loisirs {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: center;
-        height: 88px;
-        font-size: 3em;
-    }
-
-    /*--------------------M---------------------*/
-    /* Formation + Expérience + Recommandations */
-    /*------------------------------------------*/
-
-    .icone-titre {
-        padding-top: 1rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .icone {
-        margin: 0;
-        padding-left: 2rem;
-        font-size: 20px;
-        color: #feca07;
-    }
+    /* Section "formation, etc." */
 
     .h2noir {
-        font-weight: 500;
-        color: inherit;
-        font-size: 20px;
-        padding-left: 1rem;
         padding-right: 2rem;
-    }
-
-    .lignejaune {
-        border-bottom: solid 2px #feca07;
-        margin-right: 2rem;
-        margin-left: 2rem;
-    } 
-
-    .details {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .points-dates {
-        display: flex;
-        flex-direction: row;
-        width: 30%;
-        padding-left: 2rem;
-        margin-top: 2rem;
-    }
-
-    .dates {
-        margin: 0;
-        width: 80%;
-    }
-
-    .point-cercle {
-        font-size: 1.2em;
-        color: #feca07;
-        width: 20%;
-    }
-
-    .cercle {
-        font-size: 0.7em;
-        color: #feca07;
-        width: 20%;
-    }
-    .information {
-        width: 70%;
-        text-align: justify;
-        padding-right: 2rem;
-    }
-
-    h4 {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 600;
-        font-size: 1.2em;
-        margin-top: 2rem;
-        margin-bottom: 0.2rem;
-    }
-
-    h5 {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 500;
-        font-size: 1em;
-        margin-top: 0.4rem;
-        margin-bottom: 0.2rem;
-    }
-
-    .grp-references {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .references {
-        width: 50%;
-        margin-top: 0.4rem;
-        margin-bottom: 0.2rem;
-        padding-left: 2rem;
     }
 }
 
 /*==============================*/
 /* Optimisation pour téléphones */
 /*==============================*/
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+
+    #Nom-titre {
+        align-items: center;
+        text-align: center;
+    }
+
     .cercle {
         display: none;
     }
+
     .point-cercle {
         display: none;
+    }
+
+    .details {
+        flex-direction: column;
+
+    }
+
+    .points-dates {
+        display: flex;
+        flex-direction: initial;
+        width: inherit;
+        margin-top: 2rem;
+    }
+
+    h4 {
+        margin-top: 1rem;
+    }
+
+    .information {
+        width: inherit;
+        text-align: justify;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+
+    #Recom {
+        margin-bottom: 2rem;
+    }
+
+    .grp-references {
+        display: initial;
+        flex-direction: row;
     }
 }
 
@@ -241,236 +303,75 @@ body {
 /*===============================*/
 @media all and (min-width: 961px) {
 
-    /*------O------*/
-    /* Généralités */
-    /*-------------*/
     main {
         margin: auto;
-        font-family: 'Trebuchet MS', sans-serif;
-        font-size: 0.8em;
         max-width: 1190px;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    a:hover {
-        text-decoration: underline;
-        color: blue;
     }
 
     aside {
         float: left;
         width: 30%;
         vertical-align: top;
-        background-color: #feca07;
+        height: 100%;
     }
 
     article {
         margin-left: 30%;
         width: 70%;
         vertical-align: top;
+        height: 1280px;
     }
 
-    /*----O---*/
     /* Entête */
-    /*--------*/
+
     header {
-        display: flex;
         flex-direction: row;
     }
-    #Bloc-photo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #feca07;
+
+    #Photo {
         width: 30%;
-        height: 326px;
     }
 
-    #Bloc-nom-titre {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    #Nom-titre {
+        align-items: flex-start;
         width: 70%;
-        height: 326px;
     }
 
     h1 {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 300;
-        font-size: 3.5em;
-        margin: 0;
-        padding-left: 2rem;
-    }
-
-    .prenom {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 500;
-        color: #feca07;
+        padding-left: 2.4rem;
     }
 
     h3 {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 500;
-        font-size: 1.4em;
-        margin: 0;
-        padding-left: 2rem;
+        padding-left: 2.4rem;
     }
 
-    .mini-lignejaune {
-        border-bottom: solid 2px #feca07;
-        width: 3rem;
-        margin-left: 2rem;
-        margin-top: 0.1rem;
+    .mini-ligne {
+        margin-left: 2.4rem;
     } 
 
-    /*--------O--------*/
-    /* Contact + About */
-    /*-----------------*/
-    #Bloc-contact {
-        height: 344px;
+    /* About */
+
+    #About {
+        height: 792px;
     }
 
-    .bandeau-titre {    
-        background-color: #404040;
-        height: 38px;
-        text-align: center;
-        font-weight: 500;
-        color: #feca07;
-        font-size: 20px;
-        padding-top: 14px;
+    /* Section "formation, etc." */
+
+    #Formation {
+        margin-bottom: 1.5rem;
     }
 
-    .donnees {
-        padding-left: 2rem;
-        padding-top: 1rem;
+    #Xppro {
+        margin-bottom: 1.5rem;
     }
 
-    #Bloc-about {
-        height: 610px;
-    }
+    /* Loisirs */
 
-    .presentation {
-        text-align: justify;
-        word-wrap: break-word;
-        padding: 1rem 2rem 1rem 2rem;
-    }
-
-    /*-------------------O---------------------*/
-    /* Formation + Epérience + Recommandations */
-    /*-----------------------------------------*/
-
-    .icone-titre {
-        padding-top: 1rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .icone {
-        margin: 0;
-        padding-left: 2rem;
-        font-size: 20px;
-        color: #feca07;
-    }
-
-    .h2noir {
-        font-weight: 500;
-        color: inherit;
-        font-size: 20px;
-        padding-left: 1rem;
-    }
-
-    .lignejaune {
-        border-bottom: solid 2px #feca07;
-        margin-right: 2rem;
-        margin-left: 2rem;
-    } 
-
-    .details {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .points-dates {
-        display: flex;
-        flex-direction: row;
-        width: 30%;
-        padding-left: 2rem;
-        margin-top: 2rem;
-    }
-
-    .dates {
-        margin: 0;
-        width: 80%;
-    }
-
-    .point-cercle {
-        font-size: 1.2em;
-        color: #feca07;
-        width: 20%;
-    }
-
-    .cercle {
-        font-size: 0.7em;
-        color: #feca07;
-        width: 20%;
-    }
-    .information {
-        width: 70%;
-        text-align: justify;
-        padding-right: 2rem;
-    }
-
-    h4 {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 600;
-        font-size: 1.2em;
-        margin-top: 2rem;
-        margin-bottom: 0.2rem;
-    }
-
-    h5 {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 500;
-        font-size: 1em;
-        margin-top: 0.4rem;
-        margin-bottom: 0.2rem;
-    }
-
-    .grp-references {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .references {
-        width: 50%;
-        margin-top: 0.4rem;
-        margin-bottom: 0.2rem;
-        padding-left: 2rem;
-    }
-
-
-    /*--------O---------*/
-    /* Partie "loisirs" */
-    /*------------------*/
-    #Bloc-loisirs-mobile {
+    #Loisirs-mobile {
         display: none;
     }
 
-    #Bloc-loisirs-pc {
-        height: 140px;
-    }
-
-    .icones-loisirs {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: center;
-        height: 88px;
-        font-size: 3em;
+    #Loisirs-pc {
+        height: 144px;
     }
 }
