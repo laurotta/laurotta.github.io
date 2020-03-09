@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #29221f;
+    background-color: #212121;
 }
 
 main {
@@ -9,11 +9,11 @@ main {
 }
 
 aside {
-    background-color: #0abfbc;
+    background-color: #80DEEA;
 }
 
-article {
-    background-color: #fcf7c5;
+#Content {
+    background-color: #FFF9C4;
 }
 
 a {
@@ -23,7 +23,16 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #fc354c;
+    color: #b71c1c;
+}
+
+ul {
+    padding: 0;
+    list-style-type: '- ';
+}
+
+li {
+    padding-bottom: 0.3em;
 }
 
 /* Entête */
@@ -36,7 +45,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0abfbc;
+    background-color: #80DEEA;
     height: 326px;
 }
 
@@ -44,7 +53,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #fcf7c5;
+    background-color: #FFF9C4;
     height: 326px;
 }
 
@@ -58,7 +67,7 @@ h1 {
 .prenom {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
-    color: #fc354c;
+    color: #b71c1c;
 }
 
 h3 {
@@ -69,7 +78,7 @@ h3 {
 }
 
 .mini-ligne {
-    border-bottom: solid 2px #fc354c;
+    border-bottom: solid 2px #b71c1c;
     width: 3rem;
     margin-top: 0.1rem;
 } 
@@ -92,16 +101,16 @@ h3 {
 
 .bandeau-titre {    
     margin: 0;
-    background-color: #13747d;
+    background-color: #006064;
     text-align: center;
     font-weight: 600;
-    color: #0abfbc;
+    color: #80DEEA;
     font-size: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
-.donnees {
+.donnees-contact {
     margin: auto;
     padding-top: 2em;
     padding-left: 3em;
@@ -115,6 +124,10 @@ h3 {
 
 /* Section "formation, etc." */
 
+#Formation, #Xppro, #Recom {
+    margin-bottom: 1rem;
+}
+
 .icone-titre {
     display: flex;
     flex-direction: row;
@@ -125,7 +138,7 @@ h3 {
     margin: 0;
     padding-left: 2.4rem;
     font-size: 20px;
-    color: #13747d;
+    color: #006064;
 }
 
 .h2noir {
@@ -136,7 +149,7 @@ h3 {
 }
 
 .ligne {
-    border-bottom: solid 2px #13747d;
+    border-bottom: solid 2px #006064;
     margin-right: 2.4rem;
     margin-left: 2.4rem;
 } 
@@ -161,14 +174,14 @@ h3 {
 
 .point-cercle {
     font-size: 1.2em;
-    color: #13747d;
+    color: #006064;
     width: 15%;
     padding-top: 0.3rem;
 }
 
 .cercle {
     font-size: 0.7em;
-    color: #13747d;
+    color: #006064;
     width: 13%;
     padding-left: 0.3rem;
     padding-top: 0.4rem;
@@ -203,17 +216,13 @@ h5 {
 
 .references {
     width: 50%;
-    margin-top: 0.4rem;
-    margin-bottom: 0.2rem;
-    padding-left: 2rem;
+    padding-left: 2.4rem;
 }
     
 /*=====================================*/
 /* Organisation pour appareils Mobiles */
 /*=====================================*/
 @media all and (max-width: 960px) {
-
-    /* Entête */
 
     header {
         flex-direction: column;
@@ -223,24 +232,18 @@ h5 {
         align-items: center;
     }
 
-    /* About */
+    #Contact-xs, #Loisirs-pc, .separateur {
+        display: none;
+    }
 
     #About {
         height: auto;
     }
 
-    /* Loisirs */
-
-    #Loisirs-pc {
-        display: none;
-    }
-
     #Loisirs-mobile {
-        background-color: #0abfbc;
+        background-color: #80DEEA;
         height: 144px;
     }
-
-    /* Section "formation, etc." */
 
     .h2noir {
         padding-right: 2rem;
@@ -252,10 +255,39 @@ h5 {
 /*==============================*/
 @media (max-width: 480px) {
 
+    main {
+        font-size: 1em;
+    }
+
     #Nom-titre {
         align-items: center;
         text-align: center;
     }
+
+    #Contact {
+        display: none;
+    }
+
+    #Contact-xs {
+        display: inherit;
+        height: auto;
+    }
+
+    .donnees-contact {
+        padding-bottom: 2em;
+    }
+
+    li {
+        padding-bottom: 0.5em;
+    }
+
+    .separateur {
+        display: inherit;
+        border-bottom: solid 2px #006064;
+        width: 3rem;
+        margin-top: 0.1rem;
+        margin-left: 2.4rem;
+    } 
 
     .cercle {
         display: none;
@@ -293,8 +325,7 @@ h5 {
     }
 
     .grp-references {
-        display: initial;
-        flex-direction: row;
+        display: inherit;
     }
 }
 
@@ -312,17 +343,18 @@ h5 {
         float: left;
         width: 30%;
         vertical-align: top;
-        height: 100%;
     }
 
-    article {
+    #Content {
         margin-left: 30%;
         width: 70%;
         vertical-align: top;
-        height: 1280px;
+        height: 1800px;
     }
 
-    /* Entête */
+    #Contact-xs, #Loisirs-mobile, .separateur {
+        display: none;
+    }
 
     header {
         flex-direction: row;
@@ -349,13 +381,9 @@ h5 {
         margin-left: 2.4rem;
     } 
 
-    /* About */
-
     #About {
-        height: 792px;
+        height: 1312px;
     }
-
-    /* Section "formation, etc." */
 
     #Formation {
         margin-bottom: 1.5rem;
@@ -363,12 +391,6 @@ h5 {
 
     #Xppro {
         margin-bottom: 1.5rem;
-    }
-
-    /* Loisirs */
-
-    #Loisirs-mobile {
-        display: none;
     }
 
     #Loisirs-pc {

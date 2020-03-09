@@ -18,12 +18,10 @@
     <!-- Entête -->
     <header>
 
-        <!-- Partie contenant la photo -->
         <div id="Photo">
             <p><a href="images/laurent.png"><img src="images/laurent_rond_220.png" alt="Photo de Laurent Ottaviani" title="ma photo"/></a></p>
         </div>
         
-        <!-- Partie contenant nom et titre -->
         <section id="Nom-titre">
             <h1><span class="prenom">LAURENT</span> OTTAVIANI</h1>
             <div class="devligne">
@@ -37,36 +35,45 @@
     <!-- Partie gauche contenant les informations générales -->
     <aside>
 
-        <!-- Informations de contact -->
+        <!-- Pour l'affichage mobile + pc -->
         <section id="Contact">
             <h2 class="bandeau-titre">CONTACT</h2>
-            <div class="donnees">
-                <p>Adresse<br>11, Guionnet<br>33620 Tizac de Lapouyade, France</p>
-                <p>Téléphone<br>+33 670 693 708</p>
-                <p>Email<br><a href="mailto:laurent_ottaviani@orange.fr">laurent_ottaviani@orange.fr</a></p>
-                <p>Site Web<br><a href="https://www.laurentottaviani.fr" title="Accessible prochainement">www.laurentottaviani.fr</a></p>
-                <p>Discord<br>LaurentOtta#7105</p>
+            <div class="donnees-contact">
+                <p><strong>Adresse</strong><br>11, Guionnet<br>33620 Tizac de Lapouyade, France</p>
+                <p><strong>Téléphone</strong><br>+33 670 693 708</p>
+                <p><strong>Email</strong><br><a href="mailto:laurent_ottaviani@orange.fr">laurent_ottaviani@orange.fr</a></p>
+                <p><strong>Site Web</strong><br><a href="https://www.laurentottaviani.fr" title="Accessible prochainement">laurentottaviani.fr</a></p>
+                <p><strong>Discord</strong><br>LaurentOtta#7105</p>
+            </div>
+        </section>
+        <!-- Pour l'affichage téléphone -->
+        <section id="Contact-xs">
+            <h2 class="bandeau-titre">CONTACT</h2>
+            <div class="donnees-contact">
+                <p>&#x1F3E1;<br>11, Guionnet<br>33620 Tizac de Lapouyade, France</p>
+                <p>&#x1F4F1;<br>+33 670 693 708</p>
+                <p>&#x1F4E7;<br><a href="mailto:laurent_ottaviani@orange.fr">laurent_ottaviani@orange.fr</a></p>
+                <p>&#x1F310;<br><a href="https://www.laurentottaviani.fr" title="Accessible prochainement">laurentottaviani.fr </a>(&#x1F6AB;)</p>
+                <p>&#x1F4AC;<br>Discord : LaurentOtta#7105</p>
             </div>
         </section>
 
-        <!-- Éléments de présentation -->
         <section id="About">
             <h2 class="bandeau-titre">À PROPOS DE MOI</h2>
             <div class="presentation">
                 <p>Après un parcours professionnel de 14 ans sur l'intégration de systèmes électroniques pour les secteurs de la santé et de l'industrie
-                (plus de 800 sites sur le grand Sud-Ouest), je suis actuellement en reconversion en tant que développeur Web.
-                Mon expérience m'a permis d'appréhender les exigences et les attentes des clients en termes d'efficacité et de qualité de service. Que ce soit sur la programmation, la mise en service, la rédaction de documentations
-                ou encore la maintenance et la formation, mes compétences techniques et relationnelles, développées au cours du temps, me permettent d'assurer la
-                satisfaction du client et sont transposables à mon nouveau métier.</p>
+                (plus de 800 sites sur le grand Sud-Ouest), je suis actuellement en reconversion en tant que développeur Web. Que ce soit sur la programmation, la mise en service, la rédaction de documentations
+                ou encore la maintenance et la formation, mon expérience m'a permis d'appréhender les exigences et les attentes des clients en termes d'efficacité et de qualité de service.</p>
             </div>
         </section>
 
-        <!-- Icônes de loisirs --> <!-- °°° caché en mode mobile °°° -->
+        <!-- Pour l'affichage pc -->
         <section id="Loisirs-pc">
             <h2 class="bandeau-titre">LOISIRS</h2>
             <div class="icones-loisirs">
                 <i class="fas fa-music"></i>
                 <i class="fas fa-biking"></i>
+                <i class="fas fa-dog"></i>
                 <i class="fas fa-gamepad"></i>
             </div>
         </section>
@@ -74,12 +81,10 @@
 
 
     <!-- Partie droite contenant les détails du parcours -->
-    <article>
+    <div id="Content">
 
-        <!-- Éléments concernant la formation -->
         <section id="Formation">
 
-            <!-- bandeau de titre -->
             <header class="icone-titre">
                 <div class="icone"><i class="fas fa-user-graduate"></i></div>
                 <h2 class="h2noir">FORMATION</h2>
@@ -93,11 +98,22 @@
                     <p class="dates">Février à août 2020<br>Paris</p>
                 </div>
                 <div class="information">
-                    <h4>OPENCLASSROOMS</h4>
+                    <h4><a href="https://openclassrooms.com/fr/paths/185-developpeur-web" title="Formation Développeur Web chez Openclassrooms">OPENCLASSROOMS</a></h4>
                     <h5>Développeur Web</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+                    <ul>Programme de la formation :
+                        <li>Établir un plan de formation et mettre en place une veille technologique</li>
+                        <li>Réaliser un site en HTML et CSS (ce CV) en responsive design et conforme aux standards, intégrer une maquette, utiliser Git et Github</li>
+                        <li>Réaliser un site avec une structure de navigation et la mise en œuvre d'effets CSS graphiques avancés, introduction à SASS</li>
+                        <li>Bonnes pratiques en développement web, assurer l'accessibilité et optimiser la taille, la vitesse et le référencement d'un site web, écrire un code HTML et CSS maintenable</li>
+                        <li>Construire un site de e-commerce en utilisant JavaScript</li>
+                        <li>Construire une API sécurisée en utilisant OWASP, Node.js, MongoDB et Express, implémenter un modèle logique de données conformément à la réglementation, stocker des données et mettre en œuvre des opérations CRUD de manière sécurisée</li>
+                        <li>Créer un réseau social d'entreprise, manipulation de bases de données SQL.</li>
+                    </ul>
                 </div>
+                <div class="separateur"></div><!-- uniquement en affichage téléphone -->
             </div>
+            
+            
 
             <!-- contenu 2ème formation -->
             <div class="details">
@@ -106,17 +122,22 @@
                     <p class="dates">2001<br>Bordeaux</p>
                 </div>
                 <div class="information">
-                    <h4>ESTEI</h4>
+                    <h4><a href="https://estei.fr/" title="ESTEI->YNOV">ESTEI</a></h4>
                     <h5>DEMIST (Bac+4), Hyperfréquences</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+                    <ul>
+                    	<li>Lignes planaires, propagation guidée – guides d’ondes</li>
+                        <li>Circuits passifs et actifs</li>
+                    	<li>Antennes hyperfréquences, propagation en hyperfréquences</li>
+                    	<li>Télécommunications par satellites, radioastronomie, radars</li>
+                    	<li>Réseaux numériques, vidéo</li>
+                    	<li>Compatibilité électromagnétique.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Éléments concernant les expériences pro -->
         <section id="Xppro">
 
-            <!-- bandeau de titre -->
             <header class="icone-titre">
                 <div class="icone"><i class="fas fa-briefcase"></i></div>
                 <h2 class="h2noir">EXPÉRIENCE PROFESSIONNELLE</h2>
@@ -130,11 +151,25 @@
                     <p class="dates">2006 à 2017<br>Nanterre</p>
                 </div>
                 <div class="information">
-                    <h4>Ascom (France) SA</h4>
+                    <h4><a href="https://www.ascom.com/fr/" title="Ascom">Ascom (France) SA</a></h4>
                     <h5>Responsable Technique Régional (sud-ouest)</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+                    <ul>
+                        <li>Analyse des solutions vendues en relation avec l’équipe commerciale, le partenaire et le client final</li>
+                        <li>Élaboration des documentations et schémas spécifiques à l’installation et l’exploitation</li>
+                        <li>Collecte de données et visites de chantier</li>
+                        <li>Programmation et mise en service</li>
+                        <li>Interfaçage réseaux LAN/WLAN clients et produits tiers (PBX, SSI, etc.)</li>
+                        <li>Création des supports de formation et formation auprès des clients (partenaires, installateurs, équipes de maintenance, utilisateurs)</li>
+                        <li>Assistance technique auprès du Directeur Commercial Régional</li>
+                        <li>Audits techniques et rédaction des rapports</li>
+                        <li>Diagnostiques, dépannages, mises à jour logicielles et matérielles</li>
+                        <li>Visites contractuelles et préventives</li>
+                        <li>Tests et validations de nouvelles versions et fonctionnalités en collaboration avec l’équipe support technique.</li>
+                    </ul>
                 </div>
             </div>
+            
+            <div class="separateur"></div><!-- uniquement en affichage téléphone -->
 
             <!-- contenu 2ème expérience -->
             <div class="details">
@@ -145,9 +180,11 @@
                 <div class="information">
                     <h4>SARL Assistech</h4>
                     <h5>Technicien</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+                    <p>Installation, mise en service et dépannage de systèmes de télécommunications et radiocommunications sur site. Marques : Ascom, Philips, Siemens, Aastra, Kirk, Bosch, Icom, Motorola, etc...</p>
                 </div>
             </div>
+
+            <div class="separateur"></div><!-- uniquement en affichage téléphone -->
 
             <!-- contenu 3ème expérience -->
             <div class="details">
@@ -156,46 +193,56 @@
                     <p class="dates">Avril à septembre 2001<br>Munich</p>
                 </div>
                 <div class="information">
-                    <h4>EPCOS AG</h4>
+                    <h4><a href="https://product.tdk.com/info/en/products/rf/rf/filter/index.html" title="EPCOS->TDK">EPCOS AG</a></h4>
                     <h5>Werkstudent, R&amp;D Surface Acoustic Wave Devices</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+                    <p>Sujet d’étude : « Determination of material parameters for aluminium structures on quartz substrates produced by vapor deposition and wet etching ».</p>
+                    <ul>
+                        <li>Recherche théorique dans la littérature à disposition</li>
+                        <li>Conception (UNIX / Linux) et fabrication (en salle blanche) des structures de test</li>
+                        <li>Mesures, relevés et analyse des résultats</li>
+                        <li>Extraction de nouveaux paramètres pour améliorer la simulation informatique des résonnateurs et filtres à onde de surface</li>
+                        <li>Travail en indépendance avec le support des ingénieurs à chaque étape du process</li>
+                        <li>Rédaction d’un rapport en anglais.</li>
+                    </ul> 
                 </div>
             </div>
         </section>
 
-        <!-- Éléments concernant les recommandations -->
         <section id="Recom">
 
-            <!-- bandeau de titre -->
             <header class="icone-titre">
                 <div class="icone"><i class="fas fa-pencil-alt"></i></div>
                 <h2 class="h2noir">RECOMMANDATIONS</h2>
             </header>
             <div class="ligne"></div>
 
-            <!-- contenu -->
             <div class="grp-references">
                 <div class="references">
-                    <h4>JOHN DOE</h4>
-                    <p>Directeur<br>Téléphone :<br>Email :</p>
+                    <h4>M. Yves R.</h4>
+                    <h5>Responsable</h5>
+                    <p>Téléphone :<br>Email :</p>
                 </div>
+                <div class="separateur"></div><!-- uniquement en affichage téléphone -->
                 <div class="references">
-                    <h4>JOHN DOE</h4>
-                    <p>Directeur<br>Téléphone :<br>Email :</p>
+                    <h4>Dr. Philipp O.</h4>
+                    <h5>Directeur</h5>
+                    <p>Téléphone :<br>Email :</p>
                 </div>
             </div>
         </section>
         
-        <!-- Icônes de loisirs --> <!-- °°° caché en mode pc °°° -->
+        <!-- Pour l'affichage mobile + téléphone -->
         <section id="Loisirs-mobile">
             <h2 class="bandeau-titre">LOISIRS</h2>
             <div class="icones-loisirs">
                 <i class="fas fa-music"></i>
                 <i class="fas fa-biking"></i>
+                <i class="fas fa-dog"></i>
+                <i class="fas fa-biking"></i>
                 <i class="fas fa-gamepad"></i>
             </div>
         </section>
-    </article>
+    </div>
 </main>
 </body>
 </html>
