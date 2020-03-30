@@ -159,7 +159,7 @@ h3 {
     margin-left: 2.4rem;
 } 
 
-.details {
+.details, .grp-references {
     display: flex;
     flex-direction: row;
 }
@@ -214,11 +214,6 @@ h5 {
     margin-bottom: 0.2rem;
 }
 
-.grp-references {
-    display: flex;
-    flex-direction: row;
-}
-
 .references {
     width: 50%;
     padding-left: 2.4rem;
@@ -237,7 +232,7 @@ h5 {
         align-items: center;
     }
 
-    #Contact-xs, #Loisirs-pc, .separateur {
+    #Contact-xs, #Loisirs-pc, .separateur, footer {
         display: none;
     }
 
@@ -269,7 +264,7 @@ h5 {
         text-align: center;
     }
 
-    #Contact {
+    #Contact, .cercle, .point-cercle, footer {
         display: none;
     }
 
@@ -293,14 +288,6 @@ h5 {
         margin-top: 0.1rem;
         margin-left: 2.4rem;
     } 
-
-    .cercle {
-        display: none;
-    }
-
-    .point-cercle {
-        display: none;
-    }
 
     .details {
         flex-direction: column;
@@ -374,31 +361,30 @@ h5 {
         width: 70%;
     }
 
-    h1 {
+    h1, h3, .mini-ligne {
         padding-left: 2.4rem;
     }
-
-    h3 {
-        padding-left: 2.4rem;
-    }
-
-    .mini-ligne {
-        margin-left: 2.4rem;
-    } 
 
     #About {
         height: 1312px;
     }
 
-    #Formation {
-        margin-bottom: 1.5rem;
-    }
-
-    #Xppro {
+    #Formation, #Xppro {
         margin-bottom: 1.5rem;
     }
 
     #Loisirs-pc {
         height: 144px;
+    }
+
+    footer p {
+        position: relative;
+        left: 50%;
+    }
+
+    .css3-img {
+        border: 0;
+        width: 88px;
+        height: 31px;
     }
 }
