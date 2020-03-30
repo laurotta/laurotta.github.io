@@ -9,11 +9,11 @@ main {
 }
 
 aside {
-    background-color: #80DEEA;
+    background-color: #81D4FA;
 }
 
 #Content {
-    background-color: #FFF9C4;
+    background-color: #E1F5FE;
 }
 
 a {
@@ -26,13 +26,18 @@ a:hover {
     color: #b71c1c;
 }
 
+a:visited {
+    text-decoration: none;
+    color: #01579B;
+}
+
 ul {
     padding: 0;
     list-style-type: '- ';
 }
 
 li {
-    padding-bottom: 0.3em;
+    padding-bottom: 0.3rem;
 }
 
 /* Entête */
@@ -45,7 +50,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #80DEEA;
+    background-color: #81D4FA;
     height: 326px;
 }
 
@@ -53,7 +58,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #FFF9C4;
+    background-color: #E1F5FE;
     height: 326px;
 }
 
@@ -101,10 +106,10 @@ h3 {
 
 .bandeau-titre {    
     margin: 0;
-    background-color: #006064;
+    background-color: #01579B;
     text-align: center;
     font-weight: 600;
-    color: #80DEEA;
+    color: #81D4FA;
     font-size: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -138,7 +143,7 @@ h3 {
     margin: 0;
     padding-left: 2.4rem;
     font-size: 20px;
-    color: #006064;
+    color: #01579B;
 }
 
 .h2noir {
@@ -149,7 +154,7 @@ h3 {
 }
 
 .ligne {
-    border-bottom: solid 2px #006064;
+    border-bottom: solid 2px #01579B;
     margin-right: 2.4rem;
     margin-left: 2.4rem;
 } 
@@ -174,14 +179,14 @@ h3 {
 
 .point-cercle {
     font-size: 1.2em;
-    color: #006064;
+    color: #01579B;
     width: 15%;
     padding-top: 0.3rem;
 }
 
 .cercle {
     font-size: 0.7em;
-    color: #006064;
+    color: #01579B;
     width: 13%;
     padding-left: 0.3rem;
     padding-top: 0.4rem;
@@ -241,7 +246,7 @@ h5 {
     }
 
     #Loisirs-mobile {
-        background-color: #80DEEA;
+        background-color: #81D4FA;
         height: 144px;
     }
 
@@ -253,7 +258,7 @@ h5 {
 /*==============================*/
 /* Optimisation pour téléphones */
 /*==============================*/
-@media (max-width: 480px) {
+@media all and (max-width: 480px) {
 
     main {
         font-size: 1em;
@@ -283,7 +288,7 @@ h5 {
 
     .separateur {
         display: inherit;
-        border-bottom: solid 2px #006064;
+        border-bottom: solid 2px #01579B;
         width: 3rem;
         margin-top: 0.1rem;
         margin-left: 2.4rem;
