@@ -380,6 +380,7 @@ h5 {
     footer p {
         position: relative;
         left: 50%;
+        max-width: 1190px;
     }
 
     .css3-img {
