@@ -95,7 +95,23 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     font-size: 2.5em;
-    padding-top: 2rem;
+    padding-top: 1.6rem;
+}
+
+.icones-loisirs i {
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.fa-music {
+    padding: 10px;
+}
+
+.fa-biking, .fa-gamepad {
+    padding: 10px 6px 10px 6px;
+}
+
+.fa-dog {
+    padding: 10px 8px 10px 8px;
 }
 
 /* Aside */
