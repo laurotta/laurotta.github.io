@@ -1,7 +1,7 @@
 ## OPENCLASSROOMS
 Formation développeur web - PROJET 2
 
-Transformez votre CV en site Web
+Transformez votre CV en site Web ->https://laurotta.github.io/
 
 Compétences évaluées :
 - Intégrer du contenu conformément à une maquette
